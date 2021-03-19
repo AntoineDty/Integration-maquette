@@ -111,6 +111,7 @@ video {
   src: url(../fonts/Raleway-Light.ttf) format("truetype");
 }
 
+/* Config Page */
 :root {
   --blueBasic: #0065fc;
   --softgrey: #deebff;
@@ -119,9 +120,11 @@ video {
 
 header,
 .headerWrap,
+nav,
 .nav,
 .logo,
 .headNav,
+h1,
 .headNavLink {
   display: flex;
 }
@@ -138,8 +141,32 @@ body {
   background-color: #ffffff;
 }
 
+/* Paragraphes et config textes */
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: 650;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/*Header*/
 .header {
-  margin-bottom: 2rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
 .headerWrap {
@@ -193,8 +220,34 @@ nav {
   justify-content: space-between;
 }
 
-a {
-  text-decoration: none;
+/* TAILLES ECRAN */
+
+/* 1080p */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .headerWrap,
+  .mainWrap {
+    width: 100%;
+  }
+}
+
+/* 2K + */
+@media screen and (min-width: 1081px) {
+  .headerWrap,
+  .mainWrap,
+  .footerWrap {
+    inline-size: 1344px;
+    max-width: 1344px;
+    margin: auto;
+  }
+}
+
+/* 1080p +
+@media screen and (min-width: 768px) {
+  .header,
+  .mainWrap,
+  .footerWrap {
+    display: flex;
+  }
 }
 
 /* MENU FILTRE
