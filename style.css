@@ -1,15 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 /* Debut CSS */
-.filterMenu {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(../fonts/Raleway-Medium.ttf) format("truetype");
 }
 
-.filterInfo {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: horizontal;
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url(../fonts/Raleway-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url(../fonts/Raleway-Light.ttf) format("truetype");
 }
