@@ -1,5 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 /* Debut CSS */
 
 @font-face {
@@ -21,3 +110,104 @@
   font-family: "Raleway-Light";
   src: url(../fonts/Raleway-Light.ttf) format("truetype");
 }
+
+:root {
+  --blueBasic: #0065fc;
+  --softgrey: #deebff;
+  --grey: #f2f2f2;
+}
+
+header,
+.headerWrap,
+.nav,
+.logo,
+.headNav,
+.headNavLink {
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  flex-direction: column;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.headerWrap {
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.logo img {
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.headNavLink[data-active="true"] {
+  border-top: 2px solid var(--blueBasic);
+  color: var(--blueBasic);
+}
+
+.headNavLink[data-active="false"] {
+  border-top: 2px solid transparent;
+  color: var(--blueBasic);
+}
+
+.headNavLink[data-active="false"]:hover {
+  border-top: 2px solid var(--blueBasic);
+}
+
+.headLogin[data-active="false"] {
+  border-top: 2px solid transparent;
+  margin-right: 0;
+  color: var(--blueBasic);
+  font-weight: bold;
+}
+
+.headLogin[data-active="false"]:hover {
+  border-top: 2px solid var(--blueBasic);
+}
+
+.headNavLink,
+.headLogin {
+  margin: 0 0.5rem;
+  padding: 3rem 1.5rem 0.5rem 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* MENU FILTRE
+.filterMenu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.filterInfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: horizontal;
+}
+*/

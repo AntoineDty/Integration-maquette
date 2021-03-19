@@ -15,14 +15,28 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="index.html" title="Reservia">
-        <img class="reserviaLogo" src="img/logo/Reservia.svg" alt="Reservia" />
-      </a>
-      <nav class="headNav">
-        <a class="headNavLink" href="#anchorHousing">Hébergements</a>
-        <a class="headNavLink" href="#anchorActivity">Activités</a>
-      </nav>
-      <a class="headLogin" href="#">S'inscrire</a>
+      <div class="headerWrap">
+        <div class="logo">
+          <a href="index.html" title="Reservia">
+            <img
+              class="reserviaLogo"
+              src="img/logo/Reservia.svg"
+              alt="Reservia"
+            />
+          </a>
+        </div>
+        <div class="nav">
+          <nav class="headNav">
+            <a class="headNavLink" href="#anchorHousing" data-active="true"
+              >Hébergements</a
+            >
+            <a class="headNavLink" href="#anchorActivity" data-active="false"
+              >Activités</a
+            >
+          </nav>
+          <a class="headLogin" href="#" data-active="false">S'inscrire</a>
+        </div>
+      </div>
     </header>
 
     <!-- Titre de page (présentation) -->
