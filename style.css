@@ -125,6 +125,11 @@ nav,
 .search,
 .search i:nth-child(1),
 .searchSubmit,
+.filter,
+.filterMenu,
+.filterButton,
+.filterButton i,
+.filterButton a,
 .logo,
 .headNav,
 h1,
@@ -238,7 +243,7 @@ nav {
 .search,
 .search input,
 .searchLocation {
-  height: 3.5rem;
+  height: 3.25rem;
   width: auto;
 }
 
@@ -281,6 +286,65 @@ nav {
   border-top-right-radius: 1em 1em;
   border-bottom-right-radius: 1em 1em;
   font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* FILTRES */
+
+.filter {
+  align-items: center;
+  padding-left: 0.25em;
+  margin-left: 8px;
+  margin-bottom: 1rem;
+}
+
+.filter h2 {
+  margin-right: 2rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.filterMenu {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filterButton {
+  align-items: center;
+  height: 3.25rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 2.75em;
+  font-weight: 700;
+  border: 2px solid rgba(216, 216, 216, 1);
+  border-top-right-radius: 1.5em 1.5em;
+  border-bottom-right-radius: 1.5em 1.5em;
+  border-top-left-radius: 1.5em 1.5em;
+  border-bottom-left-radius: 1.5em 1.5em;
+  position: relative;
+}
+
+.filterButton i {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: auto;
+  left: -0.3rem;
+  width: 2.6em;
+  height: 2.6em;
+  border-radius: 1.5em;
+  font-size: 1.25rem;
+  color: var(--blueBasic);
+  background-color: var(--softgrey);
+}
+
+.filterButton a {
+  justify-content: center;
+  align-items: center;
+  left: auto;
+  padding-right: 1em;
+  padding-left: 0.75em;
 }
 
 /* TAILLES ECRAN */
