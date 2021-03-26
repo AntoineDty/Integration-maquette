@@ -130,6 +130,8 @@ nav,
 .filterButton,
 .filterButton i,
 .filterButton a,
+.nbInfo,
+.nbInfo i,
 .logo,
 .headNav,
 h1,
@@ -345,6 +347,27 @@ nav {
   left: auto;
   padding-right: 1em;
   padding-left: 0.75em;
+}
+
+/* BOUTON INFO */
+
+.nbInfo {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nbInfo i {
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  border-radius: 50%;
+  margin: 0 0.75rem 0 0.25rem;
+  font-size: 0.75rem;
+  color: var(--blueBasic);
+  border: 1px solid var(--grey);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TAILLES ECRAN */
