@@ -564,6 +564,10 @@ nav {
   justify-content: space-between;
 }
 
+.hotHousing h1 {
+  margin-bottom: 2rem;
+}
+
 .hotHousing .sticker {
   height: 145px;
   max-width: max-content;
