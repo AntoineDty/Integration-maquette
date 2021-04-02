@@ -376,6 +376,17 @@ h2 {
   padding-left: 0.75em;
 }
 
+.filter .filterButton:hover {
+  background-color: var(--grey);
+  transition: 0.5s;
+}
+
+.filter .filterButton:hover i {
+  background-color: var(--blueBasic);
+  color: white;
+  transition: 1s;
+}
+
 /* BOUTON INFO */
 
 .nbInfo {
@@ -472,6 +483,11 @@ h2 {
   padding: 0.25rem;
   margin-bottom: 2rem;
   box-shadow: 0px 0px 9px -3px #686868;
+}
+
+.sticker:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 
 .stickerTxt {
