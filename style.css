@@ -231,17 +231,19 @@ h2 {
     margin: auto;
   }
 
-  .headNavLink[data-active="true"] {
+  .headNavLink:active {
     border-top: 2px solid var(--blueBasic);
     color: var(--blueBasic);
   }
 
-  .headNavLink[data-active="false"] {
-    border-top: 2px solid transparent;
+  .headNavLink:hover {
+    border-top: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
   }
 
-  .headNavLink[data-active="false"]:hover {
+  #focusme {
     border-top: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
   }
 
   .headLogin[data-active="false"] {
