@@ -171,6 +171,7 @@ header,
 main,
 .footer {
   width: 100%;
+  padding: 1rem;
 }
 
 body {
@@ -477,7 +478,7 @@ h2 {
 }
 
 .sticker {
-  width: auto;
+  width: 100%;
   border-radius: 1rem;
   background-color: white;
   padding: 0.25rem;
@@ -517,7 +518,6 @@ h2 {
 
 .hotHousing .sticker {
   height: 145px;
-  max-width: max-content;
 }
 
 .hotHousing .flexImg {
@@ -646,7 +646,7 @@ h2 {
 }
 
 .footerWrap {
-  width: 100%;
+  width: auto;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -685,17 +685,28 @@ h2 {
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .headerWrap,
-  .mainWrap {
+  .mainWrap,
+  .footerWrap {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 1081px) and (max-width: 1344px) {
   .headerWrap,
   .mainWrap,
   .footerWrap {
-    inline-size: 1344px;
-    max-width: 1344px;
+    inline-size: 1080px;
+    max-width: 1080px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .headerWrap,
+  .mainWrap,
+  .footerWrap {
+    inline-size: 1300px;
+    max-width: 1300px;
     margin: auto;
   }
 }
@@ -834,6 +845,13 @@ h2 {
     height: 135px;
     min-height: 220px;
     min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1344px) {
+  .hotHousing .flexImg {
+    max-width: 30%;
+    min-width: 126px;
   }
 }
 
@@ -1021,7 +1039,6 @@ h2 {
 @media screen and (max-width: 767px) {
   .hotHousing .sticker {
     height: 145px;
-    width: 100%;
   }
 }
 
