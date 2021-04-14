@@ -778,11 +778,17 @@ h2 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .searchSubmit i:nth-child(2) {
+    display: none;
+  }
+}
+
 /* HOUSING */
 
 @media screen and (min-width: 768px) {
   .location .sticker {
-    width: 33%;
+    width: 32%;
   }
 }
 
@@ -890,6 +896,7 @@ h2 {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .hotHousing,
   .location {
@@ -899,11 +906,18 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  header, main, footer {
+    padding: 0px;
+  }
+}
+
 /* HEADER */
 
 @media screen and (max-width: 767px) {
   .header {
     margin-bottom: 1.5rem;
+    padding: 0;
   }
 }
 
@@ -917,35 +931,37 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .logo {
-    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 1rem;
   }
   .logo img {
-    height: 4rem;
+    height: 2.2rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   .headLogin {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    flex-direction: column;
-    text-align: center;
-    color: var(--blueBasic);
+    flex : 0 1 50%;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    text-align: right;
+    align-self: center;
+    padding-right: 1rem;
     font-weight: bold;
-    justify-content: space-around;
-    border-bottom: 2px solid var(--grey);
+    color: var(--blueBasic);
   }
 }
 
 @media screen and (max-width: 767px) {
   .headNav {
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-content: center;
     text-align: center;
     width: 100%;
-    padding-bottom: 1rem;
     padding-top: 1rem;
+    right: 0;
+    left: 0;
   }
 }
 
@@ -958,13 +974,21 @@ h2 {
     flex-direction: column;
     justify-content: center;
     border-bottom: 2px solid var(--grey);
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .headNavLink[data-active="true"] {
+  .headNavLink:active {
     color: var(--blueBasic);
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #focusme {
+    border-bottom: 2px solid var(--blueBasic);
+    color: var(--blueBasic);
   }
 }
 
@@ -972,7 +996,7 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .searchFilter {
-    padding: 2rem 1.5rem 0;
+    padding: 1rem 1.5rem 0;
   }
 }
 
@@ -997,6 +1021,12 @@ h2 {
 @media screen and (max-width: 320px) {
   .search {
     padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btnDesktop {
+    display: none;
   }
 }
 
